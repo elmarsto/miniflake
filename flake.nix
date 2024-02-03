@@ -7,6 +7,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixpkgs.url = "github:NixOS/nixpkgs";
+    std.url = "github:chessai/nix-std";
   };
   outputs =
     { flake-utils, gitignore, nixpkgs }: flake-utils.lib.eachDefaultSystem (system:
